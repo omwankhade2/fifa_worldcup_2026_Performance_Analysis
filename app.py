@@ -13,7 +13,7 @@ st.set_page_config(
 # ---------------- LOAD DATA ----------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("fifa_world_cup_2026_player_performance_dirty.csv.csv")
+    return pd.read_csv("fifa_world_cup_2026_player_performance_dirty.csv")
 
 df = load_data()
 
