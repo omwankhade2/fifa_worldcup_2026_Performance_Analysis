@@ -113,8 +113,7 @@ with right:
     st.subheader("⚽ Goals by Position")
 
     position_data = (
-        filtered.groupby("position", as_index=False)["goals"]
-        ["goals"].sum()
+       filtered.groupby("position", as_index=False)["goals"].sum()
         .reset_index()
     )
 
